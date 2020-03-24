@@ -18,8 +18,6 @@ async function deleteWap(req, res) {
 
 async function updateWap(req, res) {
     const wap = req.body;
-    console.log('req.query', req.query)
-    console.log('req.body', req.body)
     await wapService.update(wap)
     res.json(wap)
 }
