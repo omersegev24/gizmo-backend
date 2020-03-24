@@ -45,6 +45,7 @@ async function remove(wapId) {
 }
 
 async function update(wap) {
+    console.log('wap wap wap', wap)
     const collection = await dbService.getCollection('wap')
     wap._id = ObjectId(wap._id);
     try {

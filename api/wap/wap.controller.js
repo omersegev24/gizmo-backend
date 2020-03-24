@@ -1,7 +1,7 @@
 const wapService = require('./wap.service')
 
 async function getWaps(req, res) {
-    const waps = await wapService.query(req.query)
+    const waps = await wapService.query(req.body)
     res.send(waps)
 }
 
@@ -17,9 +17,11 @@ async function deleteWap(req, res) {
 }
 
 async function updateWap(req, res) {
-    const wap = req.query;
+    const wap = req.body;
+    console.log('req.query', req.query)
+    console.log('req.body', req.body)
     await wapService.update(wap)
-    res.send(wap)
+    res.json(wap)
 }
 
 async function createWap(req, res) {
