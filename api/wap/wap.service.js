@@ -7,7 +7,7 @@ module.exports = {
     getById,
     remove,
     update,
-    add
+    add,
 }
 
 async function query() {
@@ -45,7 +45,6 @@ async function remove(wapId) {
 }
 
 async function update(wap) {
-    console.log('wap wap wap', wap)
     const collection = await dbService.getCollection('wap')
     wap._id = ObjectId(wap._id);
     try {
@@ -67,6 +66,7 @@ async function add(wap) {
         throw err;
     }
 }
+
 
 // function _buildCriteria(filterBy) {
 //     const criteria = {};

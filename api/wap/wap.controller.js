@@ -28,10 +28,11 @@ async function createWap(req, res) {
     res.send(wap)
 }
 
+
 module.exports = {
     getWap,
     getWaps,
     deleteWap,
     updateWap,
-    createWap
+    createWap,
 }
