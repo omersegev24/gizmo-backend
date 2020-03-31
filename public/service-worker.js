@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.e0bab15597c681bcd17666f46028c8b6.js"
+  "/precache-manifest.40455e6d18124d2e197edaedfbfc4e08.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "gizmo"});
